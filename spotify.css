@@ -1,0 +1,96 @@
+body{
+    background: rgb(22, 22, 22);
+    color: white;
+}
+h1{
+    color: whitesmoke;
+    font-family: poppins;
+   /*  text-align: center; */
+   
+}
+
+.firstDiv{
+     margin-top: 5vw;
+     text-align: center;
+}
+
+input{
+    border: 1px solid grey;
+    background-color: transparent;
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+}
+
+.signUp{
+    background: transparent;
+    color: white;
+    position: relative;
+}
+
+.googlelogo{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+}
+
+form{
+    input{
+        width: 280px;
+        height: 50px;
+        margin-top: 10px;
+        cursor: not-allowed
+    }
+    label{
+        margin-left: -200px;
+    }
+}
+
+
+button.next{
+    width: 280px;
+    height: 50px;
+    border-radius: 50px;
+    background: rgba(23, 167, 23, 0.458);
+    border:  transparent;
+    
+}
+
+button{
+    width: 280px;
+    height: 50px;
+    border-radius: 50px;
+    font-size: medium;
+    font-weight: 600;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    cursor: grab;
+}
+
+.lastText{
+    font-size: medium;
+    font-weight: 700;
+}
+
+
+.footerText{
+    width: 300px;
+    font-weight: 100;
+    justify-self: center;
+    opacity: 0.5;
+    font-size: 13px;
+}
+
+a:link{
+    color:white;
+}
+
+button:hover{
+    width: 300px;
+    border: 2px solid white;
+}
+
+button.next:hover{
+    width: 280px;
+    border: none;
+    cursor: not-allowed;
+}
