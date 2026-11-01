@@ -279,6 +279,7 @@
     --color-body: var(--color-gray-600);
     --color-heading: var(--color-gray-900);
     --color-fg-brand: var(--color-blue-700);
+    --color-fg-brand-strong: var(--color-blue-900);
     --color-fg-disabled: var(--color-gray-400);
     --color-neutral-primary: var(--color-white);
     --color-neutral-primary-medium: var(--color-white);
@@ -288,6 +289,8 @@
     --color-neutral-tertiary: var(--color-gray-100);
     --color-neutral-tertiary-medium: var(--color-gray-100);
     --color-neutral-quaternary: var(--color-gray-200);
+    --color-brand-softer: var(--color-blue-50);
+    --color-brand-soft: var(--color-blue-100);
     --color-brand: var(--color-blue-700);
     --color-brand-medium: var(--color-blue-200);
     --color-brand-strong: var(--color-blue-800);
@@ -844,14 +847,29 @@
   .m-4 {
     margin: calc(var(--spacing) * 4);
   }
+  .-mx-1\.5 {
+    margin-inline: calc(var(--spacing) * -1.5);
+  }
   .mx-auto {
     margin-inline: auto;
+  }
+  .-my-1\.5 {
+    margin-block: calc(var(--spacing) * -1.5);
   }
   .ms-1\.5 {
     margin-inline-start: calc(var(--spacing) * 1.5);
   }
+  .ms-2 {
+    margin-inline-start: calc(var(--spacing) * 2);
+  }
+  .ms-auto {
+    margin-inline-start: auto;
+  }
   .-me-0\.5 {
     margin-inline-end: calc(var(--spacing) * -0.5);
+  }
+  .mt-0\.5 {
+    margin-top: calc(var(--spacing) * 0.5);
   }
   .mt-2 {
     margin-top: calc(var(--spacing) * 2);
@@ -1124,6 +1142,9 @@
   .mb-3 {
     margin-bottom: calc(var(--spacing) * 3);
   }
+  .mb-4 {
+    margin-bottom: calc(var(--spacing) * 4);
+  }
   .apexcharts-canvas .apexcharts-xaxistooltip {
     color: var(--color-body) !important;
     padding-top: 0.5rem !important;
@@ -1249,6 +1270,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
+  }
   .h-10 {
     height: calc(var(--spacing) * 10);
   }
@@ -1364,6 +1388,9 @@
   .max-w-7xl {
     max-width: var(--container-7xl);
   }
+  .max-w-screen-xl {
+    max-width: var(--breakpoint-xl);
+  }
   .datatable-wrapper .datatable-search .datatable-input {
     color: var(--color-heading);
     font-size: 0.875rem;
@@ -1407,6 +1434,9 @@
   }
   .flex-shrink {
     flex-shrink: 1;
+  }
+  .shrink-0 {
+    flex-shrink: 0;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -1457,6 +1487,9 @@
   }
   .flex-col {
     flex-direction: column;
+  }
+  .flex-wrap {
+    flex-wrap: wrap;
   }
   .items-center {
     align-items: center;
@@ -1652,6 +1685,9 @@
   }
   .bg-brand {
     background-color: var(--color-brand);
+  }
+  .bg-brand-softer {
+    background-color: var(--color-brand-softer);
   }
   .bg-dark-backdrop\/70 {
     background-color: color-mix(in srgb, oklch(13% 0.028 261.692) 70%, transparent);
@@ -1955,6 +1991,9 @@
   .text-fg-brand {
     color: var(--color-fg-brand);
   }
+  .text-fg-brand-strong {
+    color: var(--color-fg-brand-strong);
+  }
   .text-fg-disabled {
     color: var(--color-fg-disabled);
   }
@@ -2083,6 +2122,9 @@
     .hover\:bg-blue-800:hover {
       background-color: var(--color-blue-800);
     }
+    .hover\:bg-brand-soft:hover {
+      background-color: var(--color-brand-soft);
+    }
     .hover\:bg-brand-strong:hover {
       background-color: var(--color-brand-strong);
     }
@@ -2141,12 +2183,20 @@
     --tw-outline-style: none;
     outline-style: none;
   }
+  @media (width >= 40rem) {
+    .sm\:items-center {
+      align-items: center;
+    }
+  }
   @media (width >= 48rem) {
     .md\:inset-0 {
       inset: 0px;
     }
     .md\:mt-0 {
       margin-top: 0px;
+    }
+    .md\:block {
+      display: block;
     }
     .md\:hidden {
       display: none;
@@ -2175,8 +2225,14 @@
     .md\:bg-neutral-primary {
       background-color: var(--color-neutral-primary);
     }
+    .md\:bg-transparent {
+      background-color: transparent;
+    }
     .md\:p-0 {
       padding: 0px;
+    }
+    .md\:text-fg-brand {
+      color: var(--color-fg-brand);
     }
     @media (hover: hover) {
       .md\:hover\:bg-transparent:hover {
@@ -2256,6 +2312,15 @@
     }
     .dark\:focus\:ring-gray-600:focus {
       --tw-ring-color: var(--color-gray-600);
+    }
+  }
+  @media (width >= 48rem) {
+    @media (prefers-color-scheme: dark) {
+      @media (hover: hover) {
+        .md\:dark\:hover\:bg-transparent:hover {
+          background-color: transparent;
+        }
+      }
     }
   }
 }
