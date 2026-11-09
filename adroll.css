@@ -1,0 +1,325 @@
+body{
+    font-family: serif;
+}
+div.one1{
+    background: linear-gradient(155deg, #1B4B65, skyblue);
+    button{
+        font-weight: 200;
+        padding: 20px;    
+    }
+    input{
+        background-color: rgb(196, 195, 195);
+        width: 120px;
+        height: 30px;
+        border-radius: 20px;
+        padding: 5px;
+        padding-left: 7px;
+        margin-top: 20px;
+    }
+    input:hover{
+        background: transparent;
+    }
+}
+a{
+    border-bottom: 1px solid blue;
+}
+#alert-2{
+    background: #00AEEF;
+}
+.nav1{
+    position: fixed;
+    padding: 0 20px;
+    border-radius: 20px;
+    ul{
+        background: white;
+        border-radius: 50px;
+        padding: 0 20px;
+    }
+}
+.imglogo1{
+    background-color: black;
+    width: 120px;
+    height: 30px;
+    border-radius: 20px;
+    padding: 5px;
+    margin-top: 20px;
+}
+div.topper{
+    background: #1B4B65;;
+}
+.btn{
+    border-radius: 50px;
+}
+div.two2{
+    display: flex;
+    padding-bottom: 100px;
+    .first{
+        margin-top: 150px;
+        margin-left: 150px;
+        p{
+            font-family: serif;
+        }
+        button{
+            border: none;
+            color: blue;
+            background-color: goldenrod;
+            width: 220px;
+            height: 70px;
+            border-radius: 50px;
+            font-weight: 700;
+        }
+        button:hover{
+            color: goldenrod;
+            background: blue;
+        }
+    }
+
+    .imga{
+         width: 600px;
+         margin-left: 400px;
+         margin-top: 50px;
+    }
+    
+}
+
+.ptwodiv{
+    text-align: center;
+    margin-top: 70px;
+    font-weight: 500;
+    font-size: 35px;
+    font-style: serif;
+}
+div.dddmLogos{
+    gap: 50px;
+    display: flex;
+    width: 150px;
+    margin-left: 400px;
+}
+div.dddmLogos2{   
+    gap: 50px;
+    display: flex;
+    width: 150px;
+    margin-left: 500px;
+}
+
+div.paragraphdouble{
+    display: flex;
+    gap: 70px;
+    justify-self: center;
+    a{
+        border: none;
+        font-weight: 300;
+    }
+    a:hover{
+        color: blue;
+        font-weight: 500;
+    }
+}
+
+div.paragraphtriple{
+    margin-left: 330px;
+    width: 60%;
+    p.ptripleone{
+        font-weight: 600;
+        font-size: 25px;
+        font-family: serif;
+    }
+    p.ptripletwo{
+        font-size: 35px;
+        font-family: serif;
+        opacity: 0.7;
+    }
+}
+
+div.ptriplejnr{
+    display: flex;
+    gap: 50px;
+    p.ptriplejnr1{
+        font-size: 18px;
+    }
+     p.ptriplejnr2{
+        font-size: 20px;
+     }
+     a{
+        border: none;
+        font-size: 18px;
+        justify-self: center;
+        color: rgb(8, 8, 216);
+     }
+     a:hover{
+        color: gold;
+     }
+}
+
+div.fimgs{
+    display: flex;
+    width: 92px;
+    height: 107px;
+    margin-left: 330px;
+    gap: 120px;
+}
+div.pWimg{
+    margin-left: 330px;
+    margin-top: 200px;
+    p{
+        font-size: 35px;
+        color: blue;
+        font-weight: 700;
+    }
+}
+
+div.quintpLPW{
+    display: flex;
+}
+div.quint{
+    margin-left: 100px;
+    .quint1{
+        margin-top: 150px;
+    }
+    .quint2{
+        margin-left: 300px;
+        margin-top: -450px;
+
+    }
+    .quint3{
+        margin-left: 300px;
+        margin-top: 50px;
+    }
+}
+
+div.wxup{
+   text-align: center;
+   padding: 100px;
+   margin-left: 50px;
+
+   div.insightspan{
+    display: flex;
+     gap: 30px;
+    margin-top: 50px;
+    span{
+        background: rgb(157, 156, 156);
+        width: 550px;
+        border-radius: 10px;
+        padding: 10px;
+   }
+
+
+   span p:nth-child(1){
+    font-size: large;
+   }
+   span p:nth-child(3){
+    font-size: 24px;
+   }
+   span p:nth-child(3):hover{
+    color: blue;
+    font-weight: 700;
+   }
+   }
+}
+
+p.vaR{
+    text-align: center;
+    font-size: 25px;
+    color: #1B4B65;
+    margin-top: 50px;
+}
+
+div.footer{
+    background: rgba(4, 86, 251, 0.863);
+    padding: 30px;
+    img{
+        margin-top: 20px;
+    }
+    span{
+        display: flex;    
+        gap: 20px;
+        margin-top: 20px;
+    }
+}
+
+div.footer1{
+    display: flex;
+    gap: 50px;
+    margin-left: 330px;
+    margin-top: -100px;
+    p{
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 600px){
+    div.two2{
+    display: block;
+    .first{
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    br{
+        display: none;
+    }
+    .imga{
+        margin-left: 0;
+    }
+    }
+
+    div.dddmLogos{
+        display: none;
+    }
+    div.dddmLogos2{
+        display: none;
+
+    }
+    div.paragraphdouble{
+        display: block;
+        margin-left: 0;
+    }
+
+    div.paragraphtriple{
+        margin-left: 10px;
+    }
+
+    div.fimgs{
+    display: block;
+    margin-left: 10px;
+    img{
+        margin-top: 20px;
+    }
+    }
+
+
+    div.quintpLPW{
+        display: none;
+    }
+
+    div.quintpLPW{
+        display: block;
+        div.quint{
+            margin-left: 0;
+            .quint2, .quint3{
+                margin-left: 0;
+            }
+        }
+    }
+
+    div.pWimg{
+         margin-left: 0;
+         margin-top: 500px;
+         margin-bottom: 200px;
+    }
+
+    div.wxup{
+        div.insightspan{
+            display: block;
+            margin-left: 0;
+            background: none;
+            span{
+                background: none;
+            }
+        }
+    }
+
+    div.footer{
+        display: none;
+    }
+
+}

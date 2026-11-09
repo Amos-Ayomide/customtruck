@@ -3,538 +3,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Custom Truck Project</title>
+    <title>MATTTER MARK</title>
+    <link rel="stylesheet" href="mattermark.css">
+    <link href="./src/output.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+    
 
-     <link href="./src/output.css" rel="stylesheet">
-     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
 
     <style>
 
-
-    
-    .tab-content {
-        display: none;
-    }
-
-    /* Show the content belonging to the selected tab */
-    #profile-tab:checked ~ .content-area .profile-content,
-    #dashboard-tab:checked ~ .content-area .dashboard-content,
-    #settings-tab:checked ~ .content-area .settings-content,
-    #contacts-tab:checked ~ .content-area .contacts-content {
-        display: block;
-    }
-
-    /* Make all four tabs equal in width */
-    .tab-label {
-        cursor: pointer;
-        padding: 16px;
-        flex: 1;
-        text-align: center;
-        display: block;
-    }
-
-    /* Highlight the active tab */
-    #profile-tab:checked ~ .tab-buttons label[for="profile-tab"],
-    #dashboard-tab:checked ~ .tab-buttons label[for="dashboard-tab"],
-    #settings-tab:checked ~ .tab-buttons label[for="settings-tab"],
-    #contacts-tab:checked ~ .tab-buttons label[for="contacts-tab"] {
-        background-color: white;
-        border-radius: 10px;
-    }
-
-    /* Position and size the tab container */
-    .tab1 {
-        position: absolute;
-        width: 100%;
-        top: 70px;
-        left: 0;
-        right: 0;
-        margin-top: 0;
-    }
-
-    .tab-buttons,
-    .content-area {
-        width: 100%;
-        box-sizing: border-box;
-    }
-
-       /* First Tab Position */
-        .tab1{
-            width: 570px;
-            margin-top: 70px;
-        }
-
-        .tabhidbtn{
-            margin-left: 130px;
-            
-        }
-
-           #searchbtn{                   
-            border: 1px solid black; 
-            width: 520px; height: 45px;
-            border-radius: 10px;
-            background: #8A1C20;
-            color: #FFFEFE;
-            }
-
-            select{
-                border-radius: 10px;
-            }
-
-            
-
-            #labelParts #labelRental:hover{
-                color: blue;
-            }
-             #labelRental:hover{
-                color: blue;
-            }
-
-
-           span.labelrental:hover{
-                color: red;
-           }
-           span.labelparts:hover{
-            color: red;
-           }
-           span.labelsales:hover{
-            color: red;
-           }
-           span.labeltools:hover{
-            color: red;
-           }
-
-           div.topImage{
-
-            margin-left: 50px;
-
-             p.oPartner{
-                color: white;
-                width: 650px;
-                font-size: 70px;
-                line-height: 1;
-                font-weight: 600;  
-             }
-             p.oSource{
-                color: white;
-                font-size: 30px;
-                line-height: 1;
-                font-weight: 500px;
-             }
-             div{
-                color: white;
-                gap: 20px;
-                div{
-                    display: block;
-                }
-             }
-           }
-
-           div.fLC{
-            padding: 30px;
-            background: rgb(204, 202, 202);
-           }
-           .fLCs{
-             margin-left: 10px;
-             color: #AB2328;
-             font-weight: 600;
-           }
-
-           div.ci{
-            padding: 80px;
-           }
-            
-           
-           p.v-n-e{
-           margin-top: 20px;
-            margin-left: auto;
-            border-bottom: 2px solid black;
-            
-
-           }
-            p.v-n-e:hover{
-                color: #AB2328;
-                border-bottom: 2px solid #AB2328 ;
-            }
-        
-            p.n-e{    
-                font-size: 45px;
-            }
-
-         /*    TOP PICKS FOR YOUR FLEET */
-            .tpfy{
-                margin-left: 5%;
-                padding-top: 60px;
-                
-                
-           
-            }
-          
-            .tpsfimgs{
-                width: 300px;   
-            }
-
-            .alltrcimg{
-                margin-left:5%;
-                margin-right: 5%;
-                margin-top: 40px;
-                font-weight: 500;
-                color: white;
-                .truckfirimg{
-                    margin-left: 20px;
-                    margin-top: 420px;
-                    font-size: 35px;
-                    font-weight: 500;
-                }
-            }
-
-
-            /* Load King Offerings */
-
-            .load-king-p{
-           margin-top: 20px;
-            margin-left: 900px;
-           border-bottom: 2px solid black;
-
-           }
-
-            .load-king-p:hover{
-                color: #AB2328;
-                border-bottom: 2px solid #AB2328;
-                
-            }
-          
-           /* Section for Built for every demanding enviroment */
-           div.bfede{
-                margin-left: 100px; 
-                padding: 50px; 
-                padding-bottom: 70px;
-                .bfede-fir-img{
-                   gap: 20px;
-                   height: 350px;
-                }
-                .bfede-sec-img{
-                    width: 300px; 
-                    gap: 20px; 
-                    margin-top: 30px;
-                }
-                .bfede-thir-img{
-                    width: 300px; 
-                    gap: 20px; 
-                    margin-top: 30px;
-                }
-           }
-
-          /*  The Little Part Under this buildidng environment */
-           /* BUTTON */
-           .btnbfede{
-            background: white; 
-            width: 250px; height: 
-            60px; margin-top: 20px; 
-            margin-left: 300px;
-           }
-
-           .btnbfede:hover{
-            text-decoration: underline;
-           }
-
-           /* 3rd TO THE LAST SECTION */
-           .plentySelect{
-                select{
-                    width: 300px;
-                    margin-top: 20px;
-                    margin-right: 20px;
-                }
-           }
-
-           
-           .seaechndHisFriend{
-        input{
-            width: 100%;
-        }
-}
-
-.br{
-    display: none;
-}
-
-.bigimg{
-    height: 600px; 
-}
-
-.tpfysection{
-    height: 800px;
-}
-
-.tpfychip{
-    position: relative;
-}
-
-.bfede-fir-img-one{
-    width: 770px;
-}
-
-.bfede-fir-img-two{
-    width: 470px;
-}
-
-.relatedcontimgtext{
-    margin-top: -30px;
-    .relatedcontentimgs{
-        width: 330px;
-        gap: 30px;
-    }
-}
- 
-.lastsectionhrdiv{
-    gap: 80px;
-    margin-left: 30px;
-    margin-top: 30px;
-}
-.lastsectionimages{
-    gap: 10px;
-    margin-top: 10px;
-}
-
-.bigimg{
-    width: 1600px;
-}
-
- @media (max-width: 760px) {
-    .seaechndHisFriend{
-        input{
-            width: 100%;
-        }
-        p{
-            position: absolute;
-            top: 15px;
-            left: 70px;
-        }
-    }
-div.tab1{
-    display: block; 
-    width: 100%;
-}
-
-.bigimg{
-    display: block;
-    width: 100% !important;
-    max-width: 100vw !important;
-    
-}
-
-    div.tabhidbtn{
-        margin-left: 60px;
-        margin-top: 50px;
-        display: none;
-        
-    }
-
-    
-
-    .br{
-        display: block;
-    }
-
-    .fLC{
-        display: block;
-        
-            .fLCs{
-                width: 100%;
-            }
-    }
-
-    .nevne{
-        display: block;
-        .n-e{
-            font-size: 32px;   
-        }
-        .v-n-e{
-            margin-left: 350px;
-            margin-top: -30px;
-        }
-    }
-
-    .tpfy{
-       p{
-        margin-left: 0 !important;
-       }
-    }
-
-    .tpfysection{
-        height: 1100px;
-    }
-
-    .alltrcimg{
-        display: block;
-        
-        p{
-            display: none;
-        }
-        img{
-           position: static;
-            margin-left: 0 !important;
-        }
-    }
-
-    .imgbtct{
-        display:none;
-        
-    }
-
-
-    .imgcrtst{
-        display: none;
-    }
-    
-
-
-     .bfede{
-        display: block;
-        p{
-            margin-left: -170px;
-            font-size: 18px;
-        }
-        
-        .bfede-fir-img{
-            .bfede-fir-img-one{
-                width: 350px;
-                height: 200px;
-                margin-left: -120px;
-            }
-            .bfede-fir-img-two{
-                width: 250px;
-                height: 200px;
-                display: none;
-            }
-        }
-       
-        .bfede-sec-img{
-             margin-top: -100px;
-            .bfede-sec-img-one{
-                width: 130px;
-                height: 150px;
-                margin-left: -120px;
-            }
-            .bfede-sec-img-two{
-                width: 130px;
-                height: 150px;
-            }
-            .bfede-sec-img-three{
-                 width: 130px;
-                height: 150px;
-            }
-            .bfede-sec-img-four{
-                width: 130px;
-                height: 150px;
-                display: none;
-            }
-        }
-
-        .bfede-thir-img{
-            .bfede-thir-img-one{
-                width: 130px;
-                height: 150px;
-                 margin-left: -120px;
-            }
-            .bfede-thir-img-two{
-                width: 130px;
-                height: 150px;
-            }
-            .bfede-thir-img-three{
-                width: 130px;
-                height: 150px;
-            }
-            .bfede-thir-img-four{
-                width: 130px;
-                height: 150px;
-                display: none;
-            }
-        }
-
-    }
-
-    .relatedcontimgtext{
-        .relatedcontentimgs{
-            width: 150px;
-            height: 150px;
-            margin-top: 70px;
-            .lastrelated{
-                display: none;
-            }
-        }
-
-    .relatedcontenttext{
-        display: none;
-    }
-    }
-
-    .lastsectionhr-first{
-         p{
-            color: red;
-        }
-        margin-top: 100px;
-        margin-left: 0;
-        display: block;
-        width: 100%;
-    }
-
-    .lastsectionhr-second{
-         p{
-            color: red;
-        }
-        margin-top: 100px;
-         margin-left: -10px;
-    }
-
-    .lastsectionhr-third{
-         p{
-            color: red;
-        }
-         margin-top: 160vw;
-         margin-left: -70vw ;
-    }
-
-    .lastsectionhr-fourth{
-        p{
-            color: red;
-        }
-        margin-top: 160vw;
-        margin-left: 0vw;
-        margin-right: 30px;
-    }
-
-    .btnbfede{
-        display: none;
-    }
- 
-    .load-king-p{
-        display: none;
-    }
-
-    .v-n-e{
-        display: none;
-    }
-}
- 
-a.link:hover{
-    color: blue;
-    border-bottom: 2px solid blue;
-}
-           /* Media Query */
-
-          
-    
-        
-    
-
     </style>
-
-
 </head>
-
-<body >
-
+<body>
+    
     <div id="alert-1" class="flex sm:items-center p-4 mb-4 text-sm text-fg-brand-strong rounded-base bg-brand-softer" role="alert">
         <svg class="w-4 h-4 shrink-0 mt-0.5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
         <span class="sr-only">Info</span>
@@ -547,1226 +28,304 @@ a.link:hover{
         </button>
     </div>
 
-
     
-   <!-- NAV MENU THE FIRST -->
-    <div class="m-4">
-    <nav class="z-20">
-        <div class="inline-flex">
-            <div class="inline-flex gap-5  font-bold font-medium">
+<div class="topdiv">
+        <p>We are excited to announce that Mattermark has re-launched as an independent company!&nbsp;&nbsp;&nbsp;
+        <a href="#" class="topdiv">Learn More →</a></p>         
+    </div>
 
-
+    <div class="flex seconddiv">
+        <span>
+        <img src="mattermarkimgs/logo.png" alt="Logo"  class="toplogo">
+        </span>
+        
+        <nav class="bg-neutral-primary w-full z-20  start-0 border-default nav1">
+            <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+            
                 <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-body rounded-base md:hidden hover:bg-neutral-secondary-soft hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary" aria-controls="navbar-dropdown" aria-expanded="false">
-                <span class="sr-only">Open main menu</span>
-                <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
-                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-                </svg>
+                    <span class="sr-only">Open main menu</span>
+                    <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
                 </button>
-
-                <div class="hidden w-full md:inline-flex md:w-auto" id="navbar-dropdown">
-                    <div>
-                                <div class="inline-flex">
-                                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary text-red-700">
-                                    
-                                    <li>
-                                        <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 text-red-700">
-                                        SUPPORT
-                                        <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                                    </button>
-                                    <!-- Dropdown menu -->
-                                    <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                        <ul class="p-2 text-sm text-red-700 font-medium" aria-labelledby="dropdownNvbarButton">
-                                            <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">SERVICE</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">FINANCING</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">LITERATURE</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">PAD LOAD CALCULATOR</a>
-                                </li>
-                                        </ul>
-                                    </div>
-                                    </li>
-                                <span class="inline-flex"> <img src="images/location.png" alt="location icon" class="w-6 h-6">LOCATIONS</span>
-                                    <span>
-
-                                <span class="text-red-700">GOVERNMENT SALES</span>
-                                </ul>
-                                    
-                                
-
-                                    
-
-                                <div class="inline-flex  gap-7  font-bold opacity-50 font-medium" style="margin-left: 240px; color: black;">
-                                    <span><a href="spotify.html" class="link">Spotify</a></span>
-                                    <span><a href="mattermark.html" class="link">Matter Mark</a></span>
-                    
-                                    <!-- <span>News</span>
-                                    <span>Blog</span>
-                                    <span>Podcast</span>
-                                    <span>Contact Us</span> -->
-                                </div>
-                               <!--  <span style="margin-left: 20px;" class="inline-flex" >
-                                    <img src="images/profile.png" alt="Profile Icon" class="w-6  h-6"> &nbsp;&nbsp;
-                                    Log in/Register</span>
-
- -->
-                                
-                                    <img src="images/cart.png" alt="Cart Icon" class="ml-13">
-                                </div>
-
-
-                                    <hr  style="margin-top: 20px; margin-bottom: 20px; opacity: 0.5;"/>
-
-                                
-                                <div class="flex" >
-                            <span>
-                                    <img src="images/logo.png" alt="Logo Image" class="w-48">
-                                    </span>
-
-                                
-
-                                    <div >
-                                    <p style="font-size: 18px;" class="ml-15 mt-2 opacity-70" >Browse our Fleet of Equipment, Parts & Tools:</p>
-                                
-
-                                    
-                                    
-                            <button id="dropdownHoverButton2" data-dropdown-toggle="dropdownHover2" data-dropdown-trigger="hover" class="inline-flex items-center justify-center  box-border border border-transparent  focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-10" type="button" style="font-weight: 700; font-size: 17px;">
-                                NEW  
-                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                            </button>
-
-                            <!-- Dropdown menu  NEW -->
-                            <div id="dropdownHover2" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-60">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"> <img src="images/new/elctricsoln.png" class="w-8 mr-4">Electric Solutions</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"><img src="images/new/boomtruck.png" alt="Boom Truck" class="w-10 mr-4">Boom Trucks / Cranes</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-                                    <img src="images/new/bucktruck.png"  class="w-10 mr-4">Bucket Truck</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-                                    <img src="images/new/dumptruck.png"  class="w-10 mr-4">Dump Trucks</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"> <img src="images/new/forestry.png"  class="w-10 mr-4">Forestry</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"> <img src="images/new/was&ref.png"  class="w-10 mr-4">Waste & Refuse</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded"> <img src="images/new/serv-uti-truck.png"  class="w-10 mr-4">Service / Utility Trucks</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">
-                                    <img src="images/new/vacequip.png"  class="w-10 mr-4">Vac Equipment</a>
-                                </li>
-                                </ul>
-                            </div>
-
-
-
-
-
-
-                            <button id="dropdownHoverButton3" data-dropdown-toggle="dropdownHover3" data-dropdown-trigger="hover" class="inline-flex items-center justify-center  box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-10" type="button" style="font-weight: 700; font-size: 17px;">
-                            USED
-                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                            </button>
-
-                            <!-- Dropdown menu cUSED-->
-                            <div id="dropdownHover3" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Boom Trucks / Cranes</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Bucket Trucks</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Diggers</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Pickups</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Pulling & Tensioning</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Specialty Track</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Trailers</a>
-                                </li>
-                                </ul>
-                            </div>
-
-
-
-
-                            <button id="dropdownHoverButton4" data-dropdown-toggle="dropdownHover4" data-dropdown-trigger="hover" class="inline-flex items-center justify-center  box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-8" type="button" style="font-weight: 700; font-size: 17px;">
-                            RENTAL
-                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" /></svg>
-                            </button>
-
-                            <!-- Dropdown menu cUSED-->
-                            <div id="dropdownHover4" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
-                                </li>
-                                </ul>
-                            </div>
-
-
-                            <span style="font-weight: 700; font-size: 17px;" class="ml-10">BUY & SELL</span>
-                            <span style="font-weight: 700; font-size: 17px;" class="ml-10">AUCTIONS</span>
-                            <span style="font-weight: 700; font-size: 17px;" class="ml-10">BUY PARTS</span>
-
-
-
-
-                            <button id="dropdownHoverButton5" data-dropdown-toggle="dropdownHover5" data-dropdown-trigger="hover" class="inline-flex items-center justify-center  box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-10" type="button" style="font-weight: 700; font-size: 17px;">
-                            TOOLS & SAFETY
-                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
-                            </button>
-
-                            <!-- Dropdown menu cUSED-->
-                            <div id="dropdownHover5" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
-                                </li>
-                                </ul>
-                            </div>
-
-
-
-
-                            <button id="dropdownHoverButton6" data-dropdown-toggle="dropdownHover6" data-dropdown-trigger="hover" class="inline-flex items-center justify-center  box-border border border-transparent focus:ring-4 focus:ring-brand-medium shadow-xs font-medium leading-5 rounded-base text-sm px-4 py-2.5 focus:outline-none ml-5" type="button" style="font-weight: 700; font-size: 17px;">
-                            FINANCING
-                            <svg class="w-4 h-4 ms-1.5 -me-0.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7" /></svg>
-                            </button>
-
-                            <!-- Dropdown menu cUSED-->
-                            <div id="dropdownHover6" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
-                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownHoverButton">
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Dashboard</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Settings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
-                                </li>
-                                </ul>
-                            </div>
+                <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default rounded-base bg-neutral-secondary-soft md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-neutral-primary">
+                    <li>
+                    <a href="index.html" class="block py-2 px-3 text-white bg-brand rounded md:bg-transparent md:text-fg-brand md:p-0 home" aria-current="page">Home</a>
+                    </li>
+                    <!-- <li>
+                        <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                        Dropdown 
+                        <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                    </button> -->
+                    <!-- Dropdown menu -->
+                 <!--    <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                        <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
+                             <li>
+                            <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                            </li> 
+                            <li>
+                            <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                            </li>
+                             <li>
+                            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                            </li>
+                            <li>
+                            <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                            </li> 
+                        </ul>
                     </div>
-
-
-
-
-                 </div>
-
-                    </div>
-
-                </div>  
-        
-        
+                    </li> -->
+                    <li>
+                    <a href="spotify.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Spotify</a>
+                    </li>
+                     <li>
+                    <a href="adroll.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Adroll</a>
+                    </li> 
+                     <li>
+                    <a href="customtruck.html" class="block py-2 px-3 text-heading rounded hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0 md:dark:hover:bg-transparent">Custom Truck</a>
+                    </li> 
+                </ul>
+                </div>
             </div>
+        </nav>
 
-        </div>    
-        
-        <div class="seaechndHisFriend inline-flex" style="margin-top: 30px;">
-            <div>
-        
-                <input type="text" placeholder="SEARCH" />
-                    
-                    
-        
-            </div>
-           
-        
-        <p style="font-size: 24px; padding-left: 15px;" class="font-bold text-red-700 searchno"> 844-822-5581</p>
-        </div>
-    </nav>
     </div>
 
-
-  
-
-       
-
-
-<!--  IMAGE + TAB 1  -->
-
-<div class="relative w-full" style="margin-top: 20px;">
-
-    <!-- Background image -->
-    <img src="images/engine.png"
-         alt="Equipment"
-         class="block bigimg md:w-full"
-        >
-
-        
-
-    <div class="top-10 left-0 right-0 tab1 flex">
- <!--  TEXT INSIDE THE IMAGE -->
-         <div class="topImage">
-            <p class="oPartner">One Partner. Every stage of your fleet.</p>  <br /><br />
-            <p class="oSource">One Source. Endless Capability.</p> <br /><br />
-                    <div class="flex">
-                        <div>
-                         <p class="m-4">40+ Locations</p>
-                         <p class="m-4">10,000+ Rental Units</p>
-                        </div>
-                         <p class="m-4">38,000+ Parts Online</p>
-                         <p class="m-4">1,800+ Trucks for Sale</p>
-                         
-                        
-                    </div>
-         </div>
- <!--  TEXT INSIDE THE IMAGE END HERE-->
-
- <!-- TAB 1 ------ MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM -->
-       
-        <div class="tabhidbtn">
-            <!-- Hidden radio buttons -->
-            <input type="radio" name="tabs" id="profile-tab"
-                checked class="hidden">
-
-            <input type="radio" name="tabs" id="dashboard-tab"
-                class="hidden">
-
-            <input type="radio" name="tabs" id="settings-tab"
-                class="hidden">
-
-            <input type="radio" name="tabs" id="contacts-tab"
-                class="hidden">
-
-            <!-- Tab buttons -->
-            <div class="tab-buttons flex rounded text-black" style="background-color: #E5E7EB;">
-            
-                <label for="profile-tab" class="tab-label hover:text-red-700">
-                <span class="labelsales"> Sales</span>
-                </label>
-
-                <label for="dashboard-tab" class="tab-label">
-                <span class="labelrental"> Rental</span>
-                </label>
-
-                <label for="settings-tab" class="hover:text-red-700 tab-label" >
-                <span class="labelparts"> Parts </span>
-                </label>
-
-                <label for="contacts-tab" class="tab-label">
-                    <span class="labeltools">Tools</span>
-                </label>
-                
-            </div>
-
-            <!-- Information displayed when a tab is clicked -->
-            <div class="content-area bg-white p-6 text-gray-800 rounded">
-
-                <!-- PROFILE CONTENT -->
-                <div class="tab-content profile-content">
-                    
-                        <p class="font-bold mb-3" style="font-size: 18px;">1,800+ trucks in stock nationwide. Financing available.<p> <br /> 
-                            <div class="flex">
-                                <div>
-                                    <label for="buy-type">Buying Type </label> <br>
-                                    <select style="width: 250px;">
-                                        <option value="new-equipment">New Equipment</option>
-                                        <option value="pre-owned">Pre-owned Retail Ready</option>
-                                        <option value="new-equipment">CTOS Markrtplace</option>
-                                    </select>
-                                </div>
-
-                                <div class="ml-5">
-                                <label for="buy-type">Equipment type </label> <br>    
-                                <select style="width: 250px;">
-                                    <option value="aerials">Aerials</option>
-                                    <option value="build-sup">Building Supply</option>
-                                    <option value="cabNdChassis">Cab $ Chassis</option>
-                                    <option value="construction">Construction</option>
-                                    <option value="crane">Crane</option>
-                                    <option value="diggers">Diggers</option>
-                                    <option value="forestry">Forestry</option>
-                                </select>
-                                </div>
-                            </div>
-
-                            <br />
-                            <div class="flex">
-                                <div>
-                                    <label for="location">Location </label> <br>
-                                    <input type="text" name="location" id="location" placeholder="Zip/Postal code"  
-                                    style="width: 250px; border-radius: 10px;">
-                                </div>
-
-                                <div class="ml-5">
-                                <label for="distance">Distance</label> <br>    
-                                <select style="width: 250px;">
-                                    <option value="nationwide">Nationwide</option>
-                                    <option value="build-sup">50 Miles</option>
-                                    <option value="cabNdChassis">100 Miles</option>
-                                    <option value="construction">150 Miles</option>
-                                    <option value="crane">250 Miles</option>
-                                    <option value="diggers">500 Miles</option>
-                                </select>
-                                </div>
-                            </div>
-
-                            <br />
-                            <button id="searchbtn">Search Inventory</button>
-                </div>
-
-                <!-- RENTAL CONTENT -->
-                <div class="tab-content dashboard-content">
-                    
-                    <p>10,000+ units in the fleet. Ready when you are.</p> <br />
-
-                    <label for="eqp-type">Equipment Type</label> <br />
-                    <select class="w-full rounded">
-                        <option value="art">All Rental Types</option>
-                        <option value="aerials">Aerials</option>
-                        <option value="build-sup">Building Supply</option>
-                        <option value="cabNdChassis">ATV's and UTV's</option>
-                        <option value="construction">Construction</option>
-                        <option value="crane">Crane</option>
-                        <option value="diggers">Diggers</option>
-                        <option value="forestry">Forestry</option>
-                    </select>
-
-                    <br /><br /><br /><br /><br /><br />
-                    <button id="searchbtn">Search Inventory</button>
-                </div>
-
-                <!-- PARTS CONTENT -->
-                <div class="tab-content settings-content">
-                    
-                    <p>38,000+ parts in stock. Fast shipping available.</p>
-
-                    <label for="username" class="block mt-4 mb-1">
-                        Part Number or Keyword
-                    </label>
-                    <input id="username" type="text"
-                        placeholder="Search by Part number, SKU, or keyword"
-                        class="border rounded p-2 w-full">
-
-                    <label for="email" class="block mt-4 mb-1">
-                        Category
-                    </label>
-                    <select class="w-full rounded">
-                        <option value="aC">All Catergories</option>
-                        <option value="accessories">Accessosries</option>
-                        <option value="airSystem">Air System</option>
-                        <option value="attachment">Attachment</option>
-                        <option value="bB">Basket & Bucket</option>
-                        <option value="batteries">Batteries</option>
-                        <option value="belts">Belts</option>
-                        <option value="bodyParts">Body Parts</option>
-                        <option value="brakes">Brakes</option>
-                        <option value="cargoControl">Cargo Control</option>
-                    </select>
+    <div class="thirddiv">
+        <p class="dddm">Data-Driven Deal Making</p>
+        <p class="dddm2">Discover, prospect, and track the world’s fastest-growing <br /> companies and investors.</p>
+        <br /><br />
+        <button class="firstbtn">Start Free 14-Day Trial</button>
+        <p 
+        style="font-size: 13px; 
+        text-align: center;">
+        No commitment, no credit card required.</p>
 
 
-                    <br /><br />
-                    <button id="searchbtn">Search Parts</button>
-                </div>
 
-                <!-- TOOlS CONTENT -->
-                <div class="tab-content contacts-content">
-                    
-                    <p>Professional-grade tools ready for any job.</p>
-                    <label for="email" class="block mt-4 mb-1">
-                    Tool  Category
-                    </label>
-                    <select class="w-full rounded">
-                        <option value="aTC">All Tool Catergories</option>
-                        <option value="blocks">Blocks</option>
-                        <option value="kit">kit</option>
-                        <option value="safety">safety</option>
-                        <option value="tools">Tools</option>
-                    </select>
-                
-                    <br /><br /><br /><br /><br /><br />
-                    <button id="searchbtn">Search Inventory</button>
-                </div>
 
-            </div>
-        </div>
-    </div>
-</div>
-
-<!-- <br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/>
-<br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/><br class="br"/>
- -->
-
-<!-- SECTION 2 -->
-
-<section>
-    <div class="flex gap-7 fLC">
-        <p class="fLCs">FULL LIFECYCLE SUPPORT</p>
-        <span style="margin-left: 850px;" class="industryexpert">
-            <p> Industry Experts</p>
-            <p style="font-size: 14px;">Custom solutions</p>
-        </span>
-        <span class="oemParts">
-            <p> OEM Parts</p>
-            <p style="font-size: 14px;">Extensive inventory</p>
-        </span>
-        <span>
-            <p> Financing</p>
-            <p style="font-size: 14px;">Flexible terms</p>
-        </span>
-    </div>
-
-    <div class="ci">
-            <p>Curated Inventories</p>
-            <span class="flex nevne">
-            <p class="n-e">New arrivals</p>
-            <div>
-            <p class="v-n-e"> <a href="#"> View New Equipment </a></p></div>
-            </span>
-    </div>
-</section>
-
-<!-- 
-FIRST CAROUSEL -->
-<section class="mx-auto max-w-7xl px-4 py-8">
-
-    <!-- Carousel container -->
-    <div id="product-carousel"
-         class="relative w-full overflow-hidden rounded-xl"
-         data-carousel="slide">
-
-        <!-- Carousel slides -->
-        <div class="relative h-80 overflow-hidden rounded-xl">
-
-            <!-- Card 1 -->
-            <div class="hidden duration-700 ease-in-out card1" data-carousel-item="active">
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/chiptruck.png"
-                         alt="Waste and refuse truck"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Waste &amp; Refuse
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2021 Peterbilt 348 6x4
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/buildtruck.png"
-                         alt="Service truck"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Service Trucks
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            Ford F600 4x4 Service Truck
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/servicetruck.png"
-                         alt="Flatbed trailer"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Trailers
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2026 Load King Tag-Along Trailer
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/watertruck.png"
-                         alt="Service vehicle"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Trailers
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2026 Load King Tag-Along Trailer
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
+        <br /><br /><br />
+        <div class="flex dddmLogos">
+            <img src="mattermarkimgs/ddmslogos/fuel.png" class="one">
+            <img src="mattermarkimgs/ddmslogos/hcp.png" class="two">
+            <img src="mattermarkimgs/ddmslogos/fundersclub.png" class="three">
+            <img src="mattermarkimgs/ddmslogos/ludlow.png" class="four">
         </div>
 
-        <!-- Previous button -->
-        <button type="button"
-                class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-prev>
+        <div class="flex dddmLogos2">
+           <img src="mattermarkimgs/ddmslogos/usv.png" class="five"> 
+           <img src="mattermarkimgs/ddmslogos/trident.png" class="six"> 
+           <img src="mattermarkimgs/ddmslogos/nb.png" class="seven"> 
+        </div>
 
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white">
-                <svg class="h-5 w-5 text-white"
-                     aria-hidden="true"
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24">
-                    <path stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m15 19-7-7 7-7"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-
-        <!-- Next button -->
-        <button type="button"
-                class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-next>
-
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white">
-                <svg class="h-5 w-5 text-white"
-                     aria-hidden="true"
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24">
-                    <path stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m9 5 7 7-7 7"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
 
     </div>
 
-</section>
 
-<!-- TOP PICKS FOR YOUR FLEET -->
- <section style="background: #CCCACA;" class="tpfysection">
-    <div class="tpfy">
-        <p>FEATURED EQUIPMENT</p>
-        <p style="font-size: 54px;">Top picks for your fleet</p>
-    </div>
-
-    <div>
-
-        <div >
-            
-                <div class="inline-flex gap-5 alltrcimg">
-                        <img src="images/truckimages/watertruck.png" alt="Water Truck" style="border-radius: 20px;" class="relative">
-                        <p class="absolute truckfirimg"> Water Trucks</p>
-                    
-                        <div class="block tpsfimgs">
-                            <div class="flex gap-5 imgbtct">
-                                
-                                <img src="images/truckimages/buildtruck.png" alt="Building Truck"  style="border-radius: 20px;" class="relative tfpybt">
-                                <p class="absolute" style="margin-left: 20px; margin-top: 190px;">Building Truck</p>
-                                
-                                <img src="images/truckimages/chiptruck.png" alt="Chip Truck" style="border-radius: 20px;" class="relative tpfychip">
-                                <p class="absolute " style="margin-left: 340px;  margin-top: 190px;">Chip Truck</p>
-                            </div>
-
-                                
-                            <div class="flex gap-5 imgcrtst" style="margin-top: 20px;">
-                                <img src="images/truckimages/cranetruck.png" alt="Crane Truck" style="border-radius: 20px;" class="relative">
-                                <p class="absolute" style="margin-left: 20px; margin-top: 190px;">CRane Truck</p>
-                            
-                                <img src="images/truckimages/servicetruck.png" alt="Service Truck" style="border-radius: 20px;" class="relative tpfyservice">
-                                <p class="absolute" style="margin-left: 340px;  margin-top: 190px;">Service Truck</p>
-                        </div>
-                </div>
-                </div>
+    <!-- Company Profile -->
+     <div class="flex compro">
+        <div class="cp">
+            <img src="mattermarkimgs/comproimgs/one.png"><br />
+            <p style="font-size: 30px; opacity: 1;">Company Profiles</p><br />
+            <p>80+ fields per company including geography, industry, revenue, personnel, funding, and employee growth.</p>
         </div>
-    </div>
-
- </section>
-
-<!-- Load King Offerings -->
- <section>
-    <div class="flex" style="margin-top:100px; margin-left: 100px;">
-        <img src="images/loadkingpicture.png" alt="Load King Custom Truck Pic">
-        <span>
-         <p class="load-king-p"> <a href="#"> All Load KIng </a></p>
-         </span>
-
-    </div>
- </section>
-<!--  Second Carousel -->
- <div class="mx-auto max-w-7xl px-4 py-8">
-
-    <!-- Carousel container -->
-    <div id="product-carousel"
-         class="relative w-full overflow-hidden rounded-xl"
-         data-carousel="slide">
-
-        <!-- Carousel slides -->
-        <div class="relative h-80 overflow-hidden rounded-xl">
-
-            <!-- Card 1 -->
-            <div class="hidden duration-700 ease-in-out card1" data-carousel-item="active">
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/chiptruck.png"
-                         alt="Waste and refuse truck"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Waste &amp; Refuse
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2021 Peterbilt 348 6x4
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 2 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/cranetruck.png"
-                         alt="Service truck"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Service Trucks
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            Ford F600 4x4 Service Truck
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 3 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/servicetruck.png"
-                         alt="Flatbed trailer"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Trailers
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2026 Load King Tag-Along Trailer
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Card 4 -->
-            <div class="hidden duration-700 ease-in-out" data-carousel-item>
-                <div class="group relative h-80 w-full overflow-hidden rounded-xl shadow-md">
-                    <img src="images/truckimages/watertruck.png"
-                         alt="Service vehicle"
-                         class="absolute inset-0 h-full w-full object-cover">
-
-                    <div class="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent"></div>
-
-                    <div class="absolute bottom-0 left-0 w-full p-5 text-white">
-                        <p class="mb-1 text-sm font-semibold uppercase tracking-wider text-gray-300">
-                            Trailers
-                        </p>
-                        <h5 class="text-lg font-bold">
-                            2026 Load King Tag-Along Trailer
-                        </h5>
-                    </div>
-                </div>
-            </div>
-
+        <div class="kp">
+            <img src="mattermarkimgs/comproimgs/two.png" alt=""><br />
+            <p style="font-size: 30px; opacity: 1;">Key Personnel</p><br />
+            <p>Identify the right contact based on title, function, and seniority.</p>
         </div>
-
-        <!-- Previous button -->
-        <button type="button"
-                class="group absolute start-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-prev>
-
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white">
-                <svg class="h-5 w-5 text-white"
-                     aria-hidden="true"
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24">
-                    <path stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m15 19-7-7 7-7"/>
-                </svg>
-                <span class="sr-only">Previous</span>
-            </span>
-        </button>
-
-        <!-- Next button -->
-        <button type="button"
-                class="group absolute end-0 top-0 z-30 flex h-full cursor-pointer items-center justify-center px-4 focus:outline-none"
-                data-carousel-next>
-
-            <span class="inline-flex h-10 w-10 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white">
-                <svg class="h-5 w-5 text-white"
-                     aria-hidden="true"
-                     xmlns="http://www.w3.org/2000/svg"
-                     fill="none"
-                     viewBox="0 0 24 24">
-                    <path stroke="currentColor"
-                          stroke-linecap="round"
-                          stroke-linejoin="round"
-                          stroke-width="2"
-                          d="m9 5 7 7-7 7"/>
-                </svg>
-                <span class="sr-only">Next</span>
-            </span>
-        </button>
-
-    </div>
-
- </div>
-
-<!-- Section for Built for every demanding enviroment --> 
- <section style="background: #030712;">
-        <div class="bfede">
-            <div class="text-white bfedeFIRdiv" style="padding: 50px; font-weight: 600px;">
-                <p style="color: #99A1AF;">INDUSTRIES SERVED</p>
-                <p class="secpINbfede">Built for every demanding environment.</p>
-                <p style="color: #99A1AF;">We provide specialized equipment tailored to the unique challenges of your industry.</p>
-            </div>
-
-            <div class="flex bfede-fir-img ">
-                <img src="images/demandingenvironment/forestry.png" alt="Forestry"  class="rounded bfede-fir-img-one">
-                <img src="images/demandingenvironment/construction.png" alt="Construction" class="rounded bfede-fir-img-two">
-            </div>
-            <div class="flex bfede-sec-img">
-                <img src="images/truckimages/watertruck.png" alt="Refined Fuel" class="rounded bfede-sec-img-one">
-                <img src="images/demandingenvironment/railroad.png" alt="Rail" class="rounded bfede-sec-img-two">
-                <img src="images/truckimages/cranetruck.png" alt="OIL And Gas" class="rounded bfede-sec-img-three">
-                <img src="images/truckimages/servicetruck.png" alt="Waste" class="rounded bfede-sec-img-four">
-            </div>
-
-            <div class="flex bfede-thir-img">
-                <img src="images/truckimages/buildtruck.png" alt="Utilities" class="rounded bfede-thir-img-one" >
-                <img src="images/demandingenvironment/telecom.png" alt="Telecom" class="rounded bfede-thir-img-two">
-                <img src="images/demandingenvironment/buildingsupply.png" alt="Building Supply" class="rounded bfede-thir-img-three">
-                <img src="images/demandingenvironment/pullingNdString.png" alt="Pulling and Stringing" class="rounded bfede-thir-img-four">
-            </div>
-        </div>
- </section>
- <!-- The Little Part Under this buildidng environment -->
- <div style="background: #4A5565; font-weight: 700;" class="flex">
-    <div style="margin-left: 100px;" class="flex">
-        <p style="padding: 40px; color: white;">
-            GET THE LATEST INVENTORY ALERTS• 
-            <span style="color: #C3C6CC;">
-                Be the first to know about new arrivals.
-            </span>
-        </p>
-
-        <button class="rounded btnbfede">
-            <a href="#">Tell Us More</a>
-        </button>
-    </div>
- </div>
-
-
- <!-- 3rd TO THE LAST SECTION -->
-  <section>
-    <p style="text-align: center; font-size: 50px; font-weight: 700;">
-        What our customers say
-    </p>
-    <span >
-    <p style="margin-left: 140px;" class="font-bold">TrustPilot</p>
-    </span>
-    
-    <div style="background-color: #F5F5F5; padding-bottom: 70px;">
-        <div style="margin-left: 140px;">
-            <p style="color: #535673; padding-top: 70px;">EQUIPMENT TYPES</p>
-            <p>Find the right equipment.</p>
-            <p>Browse our inventory by equipment type.</p>
-        </div>
-
-        <div style="margin-left: 140px;"  class="plentySelect">
-
-        <div>
-                <select>
-                    <option value="" disabled selected>Aerials</option>
-                    <optgroup label="View all Aerials">
-                    <option>Bucket Truck</option>
-                    <option>Track Bucket</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Attachment</option>
-                    <optgroup label="View all Attachment">
-                    <option>Hook Lift Attachment</option>
-                    <option> Knuckle Bottom Attachment</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Building Supply</option>
-                    <optgroup label="View all Building Supply">
-                    <option>Building Supply</option>
-                    <option>Material Handler</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Cab & Chassis</option>
-                    <optgroup label="View all Cab & Chassis">
-                    <option> Cab & Chassis</option>
-                    </optgroup>
-                </select>
-            </div>
-
-
-            <div>
-                <select>
-                    <option value="" disabled selected>Construction</option>
-                    <optgroup label="View all Construction">
-                    <option>Building Supply</option>
-                    <option>Material Handler</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Cranes</option>
-                    <optgroup label="View all Cranes">
-                    <option>Building Supply</option>
-                    <option>Material Handler</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Diggers</option>
-                    <optgroup label="View all Diggers">
-                    <option>Derrick Diggers/option>
-                    <option>Track Diggers</option>
-                    </optgroup>
-                </select>
-
-                <select>
-                    <option value="" disabled selected>Dump Truck</option>
-                    <optgroup label="View all Dmup Truck">
-                    <option>Derrick Diggers/option>
-                    <option>Track Diggers</option>
-                    </optgroup>
-                </select>
-
-
-            </div>
-
-            <div>
-            <select>
-                <option value="" disabled selected>Forestry</option>
-                <optgroup label="View all Forestry">
-                <option>Chip Forestry</option>
-                <option>Forestry</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>MISC</option>
-                <optgroup label="View all MISC">
-                <option>Box Truck</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Propane</option>
-                <optgroup label="View all Propane">
-                <option>Bulk Propane delivery</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Pulling and Tensioning</option>
-                <optgroup label="View all Pulling Tensioning">
-                <option>Reel Trailer</option>
-                </optgroup>
-            </select>
-
-        </div>
-
-        <div>
-            <select>
-                <option value="" disabled selected>Rail</option>
-                <optgroup label="View all Rail">
-                <option>rail  bucket Truck</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Refined Refuling</option>
-                <optgroup label="View all Refined Refueling">
-                <option>Lube Truck</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Roofing Conveyor</option>
-                <optgroup label="View all Roofing Conveyor">
-                <option>Bulk Propane delivery</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Service</option>
-                <optgroup label="View all Pulling Tensioning">
-                <option> SErvice Truck</option>
-                </optgroup>
-            </select>
-
-        </div>
-
-        <div>
-            <select>
-                <option value="" disabled selected>Speciality Track</option>
-                <optgroup label="View all Speciality Track">
-                <option>Speciality Track</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Telecom</option>
-                <optgroup label="View all Telecom">
-                <option>cabel Placer</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Trailers</option>
-                <optgroup label="View all Trailers">
-                <option>Equipment Haulers</option>
-                </optgroup>
-            </select>
-
-            <select>
-                <option value="" disabled selected>Truck-Mounted Cranes</option>
-                <optgroup label="View all Truck-Mounted">
-                <option>Boom Truck</option>
-                </optgroup>
-            </select>
-
+        <div class="gs">
+            <img src="mattermarkimgs/comproimgs/three.png" alt=""><br />
+            <p style="font-size: 30px; opacity: 1;">Growth Signals</p><br />
+            <p>Get smarter about outreach by monitoring changes in team size, web traffic, media mentions and more.</p>
         </div>
      </div>
-    </div>
 
-  </section>
-
-
-  <!-- RELATED CONTENT -->
-
-<section style="margin-left: 30px; margin-top: 50px;">
-    <div>
-        <p style="font-size: 24px; font-weight: 600;">Related Content</p>
-        <div  class="relatedcontimgtext">
-            <div class="flex relatedcontentimgs">
-                <img src="images/relatedcontentimgs/rotaryDT.png" alt="">
-                <img src="images/relatedcontentimgs/wheelsup.png" alt="">
-                <img src="images/relatedcontentimgs/heatNdimpact.png" alt="" class="lastrelated">
-                <img src="images/relatedcontentimgs/202.png" alt="" class="lastrelated">
-            </div>
-
-            <div class="flex relatedcontenttext">
-                <p>What is a Rotary Dump Truck</p>
-                <p style="margin-left: 130px;">From the Wheels Up: Hydralic <br /> Gooseneck Trailers</p>
-                <p style="margin-left: 120px;">Heat and Impacts on Building Materials</p>
-                <p  style="margin-left: 50px;">Lines Work: a Years-End Spend <br /> Priority Custom Truck.</p>
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- LAST SECTION -->
-
-<section>
-    <div style="margin-top: 50px; margin-left: 30px;">
-        <p style="font-size: 64px;" class="text-red-700">ABOUT US</p>
-        <p style="font-size: 20px; padding-bottom: 50px;">Custom Truck One Source (Custom Truck) is the first true single-source provider of specialized truck and heavy equipment solutions, offering a vast rental fleet, new and used equipment sales, aftermarket parts and tooling supply, world-class service, customization and remanufacturing, in-house financing solutions and reliable liquidity of aged assets through our auction. Our equipment breadth, seasoned experts, and integrated network of locations across North America together deliver superior service and unmatched efficiency to our customers. Dig in at customtruck.com and keep up with us on Facebook, Instagram, and Twitter.</p>
-    </div>
-
-<hr />
-<div class="flex lastsectionhrdiv">
-    <div>
-        <img src="images/logo.png" alt="">
-        <div class="flex lastsectionimages">
-            <img src="images/lastsectionimages/fb.png" alt="">
-            <img src="images/lastsectionimages/x.png" alt="">
-            <img src="images/lastsectionimages/in.png" margin-top: 30px;>
-            <img src="images/lastsectionimages/insta.png" alt="">
-            <img src="images/lastsectionimages/yt.png" alt="">
-        </div>
-    </div>
-
-    <div class="block lastsectionhr-first" style="font-size: 20px;">
-        <p style="color: #53565A;">Equipment</p><br />
-        <p>New</p>
-        <p>Pre-Owned, Retail Ready</p>
-        <p>Make an Offer</p>
-        <p>Auctions</p>
-        <p>Rentals</p>
-        <p>Tools</p>
-        <p>Quote Request</p>
-    </div>
-
-    <div class="block lastsectionhr-second" style="font-size: 20px;">
-        <p style="color: #53565A;">Supports</p> <br />
-        <p>Parts</p>
-        <p>Parts Shipping Policy</p>
-        <p>Parts Warranty and Returns Service</p>
-        <p>Financing</p>
-        <p>Warranty</p>
-        <p>Help Center</p>
-        <p>Supplier Request Form</p>
-        <p>Sitemap</p>
-    </div>
-
-    <div class="block lastsectionhr-third" style="font-size: 20px;">
-        <p style="color: #53565A;">Company</p><br />
-        <p>About Us</p>
-        <p>Investors</p>
-        <p>Careers</p>
-        <p>Locations</p>
-        <p>Clothing & Apparel</p>
-        <p>Review</p>
-        <p>Contact Us</p>
-    </div>
-
-    <div class="block lastsectionhr-fourth" style="font-size: 20px;">
-        <p style="color: #53565A;">Quick Links</p><br />
-        <p>Manage My Account</p>
-        <p>Create an Account</p>
-        <p>One-Time Payment</p>
-        <p>News</p>
-        <p>Blog</p>
-        <p>Government Sales</p>
-        <p>Trade Shows & Events</p>
-        <p>FAQs</p>
-    </div>
-</div>
-
-</section>
-
-
-<!-- MY AuTHENTIC FOOTER  -->
-<div style="
-    background: #C4C4C4;
-    margin-top: 50px; 
-    font-size: 20px; 
-    padding-top: 30px;
- ">
-
-   <p style="text-align: center; padding-bottom: 30px;">
-   
     
-    <span style="border-right: 1px solid black; padding-right: 20px;">Privacy Policy </span> &nbsp;
-    <span style="border-right: 1px solid black; padding-right: 20px;">California Residents</span>&nbsp;
-    <span style="border-right: 1px solid black; padding-right: 20px;">Terms and Conditions</span> &nbsp;
-
-    &copy; 2015-2026 Custom Truck One Source, All Rights Reserved.
-   </p>
-
-</div>
 
 
 
 
-<!-- <script>
-    alert( "CAVEAT: THIS IS A STUDENT WEBPAGE NOT AN ATTEMPT TO CLONE THE EXISTING WEBPAGE")
-</script> -->
+     <!-- Using Data You Can Trust -->
+      <div  class="uDYCT">
+        <p class="uDYCT">Using Data You Can Trust</p>
+
+         <div class="flex"> 
+            <span class="block">
+            <p style="font-weight: 600; font-size: 20px; opacity: 1;">WHERE WE GET OUR DATA</p><br />
+            <p>We leverage machine learning, web crawlers, primary sources, and natural language processing to extract data from millions of news articles and websites daily.
+            <br /> <br />
+            Our team of in-house analysts verify the data every day - so you can close deals with conviction.</p>
+            </span>
+            <img src="mattermarkimgs/uduct/one.png" alt="">
+         </div>
+      </div>
+
+      
+      <div class="flex uDYCT2">
+        <img src="mattermarkimgs/uduct/two.png" alt="">
+        <span>
+            <p class="mP">Discover New Opportunities</p>
+            <p>The world’s business information in one place, filterable and sortable. Mattermark makes it faster and easier to source the best deals.</p>
+        </span>
+      </div>
+
+      <hr />
+
+      <div class="flex uDYCT3">
+        <span>
+            <p class="mP">Track Success</p>
+            <p>Search company and investor profiles for deep insights into their growth and performance over time. Break the cycle of doing business without good data.</p>
+        </span>
+        <img src="mattermarkimgs/uduct/three.png" alt="">
+      </div>
+
+      <hr />
+
+      <div class="flex uDYCT4">
+        <img src="mattermarkimgs/uduct/four.png" alt="">
+        <span>
+            <p class="mP">Stay Informed</p>
+            <p>There are 300+ million private companies in the world. Saved Searches, Custom Lists, and News Notifications make it possible to keep tabs on the ones that matter most to you.</p>
+        </span>
+      </div>
+
+      <hr /> 
+
+       <div class="flex uDYCT5">
+        <span>
+            <p class="mP">Automatically Enrich Leads in Salesforce</p>
+            <p>Get actionable insights by syncing over 80 informative fields to help warm leads and power conversations from first touch to deal close. Get all the relevant information from inside Salesforce, and apply triggers and actions to any lead, opportunity, or other object.</p>
+        </span>
+        <img src="mattermarkimgs/uduct/five.png" alt="">
+      </div>
+
+      <hr />
+
+      <div class="flex uDYCT6">
+        <img src="mattermarkimgs/uduct/six.png" alt="">
+        <span>
+            <p class="mP">Customize your Experience with API</p>
+            <p>Our API provides data on millions of companies. In just minutes, you can integrate Mattermark with your products, systems, and business processes. Create your own models and scoring algorithms to fit your business. </p>
+        </span>
+      </div>
+
+      <hr /> 
+
+      <div class="flex uDYCT7">
+        <span>
+            <p class="mP">Export Mattermark Data to Spreadsheets</p>
+            <p>Pull Mattermark data directly into Google Sheets or Microsoft Excel to add live updated company Growth Scores, location, funding, employee count, and more into your spreadsheets.</p>
+        </span>
+        <img src="mattermarkimgs/uduct/seven.png" alt="">
+      </div>
+
+      <hr />
+
+      <div class="dpuod">
+        <p>
+            Deal Professionals Use Our Data
+        </p>
+      </div>
+
+        <div class="fimg">
+            <img src="mattermarkimgs/uduct/three.png" class="img1">
+            <div class="img1"><p>INVESTORS</p></div>
+          
+            <div>
+            <img src="mattermarkimgs/uduct/five.png" class="img2">
+            <div class="img2"><p>SALES/BD</p></div>
+            </div>
+
+            <div>
+            <img src="mattermarkimgs/uduct/seven.png" class="img3">
+            <div class="img3"><p>PROFESSIONAL SERVICES</p></div>
+            </div>
+
+            
+        </div>
+        <div class="fMCTw">
+            <div class="fourMC">
+                <p class="one">4 Million Companies</p>
+                <p class="one">20 Million Key Contacts</p>
+                <p style="font-size: 30px; font-weight: 100;">Start contacting your target list today</p>
+
+                <br /><br />
+                <button> Start Free 14-day Trial</button>
+                <p style="font-size: 13px;">No commitment, no credit card required.</p>
+            </div>
+
+            <div>
+                <p style="font-size: 35px;" class="rd">Right data. Right format. Right now.</p>
+                <ul>
+                    <li>Developer Tools (REST and GraphQL APIs)</li>
+                    <li>Web-based Data Browser (CSV and PDF)</li>
+                    <li>Spreadsheet Plugins (Excel and Sheets)</li>
+                    <li>Browser Extension (Google Chrome)</li>
+                    <li>Mobile (iPhone lookup app)</li>
+                    <li>CRM Integration (Salesforce)</li>
+                </ul>
+            </div>
+        </div>
+
+
+
+        <div class="lastdivFN">
+            <div>
+                <img src="mattermarkimgs/logo.png" style="background: whitesmoke;">
+                <p>Mattermark, Inc. <br />
+                61 Moraga Way Suite 6 <br /> 
+                Orinda, CA 94563</p>
+            </div>
+
+
+            <hr  class="hr"/>
+
+            <div>
+                <p>SOLUTIONS</p>
+                <ul>
+                    <li>Prospect Discovery</li>
+                    <li>Lead Enrichment</li>
+                    <li>Developer API</li>
+                </ul>
+            </div>
+
+            <hr  class="hr"/>
+            <div>
+                <p>INTEGRATIONS</p>
+                <ul>
+                    <li>Sales Force </li>
+                    <li>MS Excel</li>
+                    <li>Google Sheet</li>
+                    <li>IOS App</li>
+                    <li>Chrome Extension</li>
+                </ul>
+            </div>
+
+
+            <hr  class="hr"/>
+            <div>
+                <p>COMPANY</p>
+                <ul>
+                    <li>News</li>
+                    <li>Newsletter</li>
+                    <li>Webinars</li>
+                </ul>
+            </div>
+
+
+            <hr  class="hr"/>
+            <div>
+                <p>SUPPORT</p>
+                <ul>
+                    <li>Help Center</li>
+                    <li>Email Us</li>
+                    <li>Privacy</li>
+                    <li>Terms</li>
+                </ul>
+            </div>
+        </div>
+
+      
+
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

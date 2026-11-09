@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adroll</title>
+    <link href="./src/output.css" rel="stylesheet">
+    <link rel="stylesheet" href="adroll.css">
+    <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
+</head>
+<body>
+    <div class="topper">
+        <section>
+            <div class="one1">
+
+
+                    <div id="alert-1" class="flex sm:items-center p-4 mb-2 text-sm  text-fg-brand-strong rounded-base bg-brand-softer" role="alert">
+                        <svg class="w-4 h-4 shrink-0 mt-0.5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                        <span class="sr-only">Info</span>
+                        <div class="ms-2 text-sm">
+                            CAVEAT: THIS IS A STUDENT WEBPAGE NOT AN ATTEMPT TO CLONE THE EXISTING WEBPAGE
+                        </div>
+                            <button type="button" class="ms-auto -mx-1.5 -my-1.5 rounded focus:ring-2 focus:ring-brand-medium hover:bg-brand-soft inline-flex items-center justify-center h-8 w-8 shrink-0 shrink-0" data-dismiss-target="#alert-1" aria-label="Close">
+                            <span class="sr-only">Close</span>
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                        </button>
+                    </div>
+
+                    <div id="alert-2" class="flex sm:items-center p-4 mb-2 text-sm  text-fg-brand-strong rounded-base" role="alert">
+                        <svg class="w-4 h-4 shrink-0 mt-0.5 md:mt-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 11h2v5m-2 0h4m-2.592-8.5h.01M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Z"/></svg>
+                        <span class="sr-only">Info</span>
+                        <div class="ms-2 text-sm">
+                            [Live Webinar] How to Use ABM to Turn Target Accounts Into Pipeline - 11/12/26 @ 10AM PT <a href="#">Register Now</a>
+
+                        </div>
+                            <button type="button" class="ms-auto -mx-1.5 -my-1.5 rounded focus:ring-2 focus:ring-brand-medium hover:bg-brand-soft inline-flex items-center justify-center h-8 w-8 shrink-0 shrink-0" data-dismiss-target="#alert-2" aria-label="Close">
+                            <span class="sr-only">Close</span>
+                            <svg class="w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18 17.94 6M18 18 6.06 6"/></svg>
+                        </button>
+                    </div>
+
+                    <!-- NAvBar ONE 1 -->
+
+                    <nav class="fixed w-full z-20  start-0 border-default nav1">
+                    <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto nav0">
+                    
+                        <button data-collapse-toggle="navbar-dropdown" type="button" class="inline-flex items-center p-2 justify-center text-sm text-body md:hidden  hover:text-heading focus:outline-none focus:ring-2 focus:ring-neutral-tertiary btn" aria-controls="navbar-dropdown" aria-expanded="false">
+                            <span class="sr-only">Open main menu</span>
+                            <svg class="w-6 h-6" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/></svg>
+                        </button>
+                        <div class="hidden w-full md:block md:w-auto" id="navbar-dropdown">
+                        <ul class="flex flex-col font-medium p-4 md:p-0 mt-4 border border-default   md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
+                            <li>
+                            <img src="adrollimgs/logo.png" alt="UDWK" class="imglogo1">
+                            </li>
+                            <li>
+                                <button id="dropdownNvbarButton" data-dropdown-toggle="dropdownNavbar" class="flex items-center justify-between w-full py-2 px-3  font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                Why Adroll 
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                            </button> 
+                            <!-- Dropdown menu 1-->
+                        <div id="dropdownNavbar" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton">
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li> 
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            </li>
+                            
+                            <li>
+                                <button id="dropdownNvbarButton2" data-dropdown-toggle="dropdownNavbar2" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                Products 
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                            </button> 
+                            <!-- Dropdown menu 2-->
+                        <div id="dropdownNavbar2" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton2">
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li> 
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            </li>    
+
+                            <li>
+                                <button id="dropdownNvbarButton3" data-dropdown-toggle="dropdownNavbar3" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                Industries 
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                            </button> 
+                            <!-- Dropdown menu 3-->
+                        <div id="dropdownNavbar3" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton3">
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li> 
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            </li>    
+        <!--  -->
+                            <li>
+                                <button id="dropdownNvbarButton4" data-dropdown-toggle="dropdownNavbar4" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                Pricing 
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                            </button> 
+                            <!-- Dropdown menu 4-->
+                        <div id="dropdownNavbar4" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton4">
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li> 
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            </li>    
+
+                            <li>
+                                <button id="dropdownNvbarButton5" data-dropdown-toggle="dropdownNavbar5" class="flex items-center justify-between w-full py-2 px-3 rounded font-medium text-heading md:w-auto hover:bg-neutral-tertiary md:hover:bg-transparent md:border-0 md:hover:text-fg-brand md:p-0">
+                                Resources 
+                                <svg class="w-4 h-4 ms-1.5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m19 9-7 7-7-7"/></svg>
+                            </button> 
+                            <!-- Dropdown menu 5-->
+                        <div id="dropdownNavbar5" class="z-10 hidden bg-neutral-primary-medium border border-default-medium rounded-base shadow-lg w-44">
+                                <ul class="p-2 text-sm text-body font-medium" aria-labelledby="dropdownNvbarButton5">
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li> 
+                                    <li>
+                                    <a href="spotify.html" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Spotify</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Earnings</a>
+                                    </li>
+                                    <li>
+                                    <a href="#" class="inline-flex items-center w-full p-2 hover:bg-neutral-tertiary-medium hover:text-heading rounded">Sign out</a>
+                                    </li> 
+                                </ul>
+                            </div>
+                            </li>    
+
+
+                            <li>
+                            <input type="text" placeholder="Search">
+                            </li>
+
+                        </ul>
+                        </div>
+                    </div>
+                    </nav>      
+                    
+            </div>
+            </section>
+            <br />
+            <section class="top-0">
+                <div style="background-color: #1B4B65;" class="two2">
+                    <div class="first">
+                    <p style="color: white; font-size: 35px;"> 
+                        Your audience <br />
+                        is everywhere. <br />
+                        Your ads can be, too.       
+                    </p>
+                    <br />
+                    <p style="color: white;">
+                        Reach them across display, native, video, mobile,<br /> social, connected TV, digital out-of-home, and <br /> ChatGPT, all from one platform.
+                    </p>
+                    <br /><br />
+                    <button>Request a Demo</button>
+                    </div>
+
+                    <div class="second">
+                        <img src="adrollimgs/one.png" alt="uptodo" class="imga">
+                    </div>
+                </div>
+            </section>
+    </div>
+
+
+    <section>
+        <div class="ptwodiv">
+            <p>
+                Trusted by 110,000+ brands around the world
+            </p>
+        </div>
+        <br /><br /> 
+        <div class="dddmLogos">
+            <img src="adrollimgs/dddmslogos/one.png" alt="">
+            <img src="adrollimgs/dddmslogos/two.png" alt="">
+            <img src="adrollimgs/dddmslogos/three.png" alt="">
+            <img src="adrollimgs/dddmslogos/four.png" alt="">
+        </div>
+        <br />
+        <div class="dddmLogos2">
+            <img src="adrollimgs/dddmslogos/five.png" alt="">
+            <img src="adrollimgs/dddmslogos/six.png" alt="">
+            <img src="adrollimgs/dddmslogos/seven.png" alt="">
+        </div>
+
+
+        <div>
+           <p class="ptwodiv"style="font-weight: 400; font-size: 25px;">    Products
+           </p>
+           <p class="ptwodiv"  style="font-weight: 200; font-size: 30px; margin-top: 10px;">
+            Advertising solutions for retailers, software <br /> providers, and everyone in between
+            </p>
+
+
+            <br /><br />
+            <div class="paragraphdouble">
+                <p style="width: 400px; text-align: center;">
+                    <span style="font-size: 28px;">AdRoll</span><br />
+                    The digital advertising platform where you can create, manage, and optimize online advertising campaigns across multiple channels from one dashboard. Build brand awareness, retarget high-intent prospects, and increase conversions all in one place. <br /><br />
+                    <a href="#">Learn More</a>
+                </p>
+                <p style="width: 400px; text-align: center;">
+                        <span style="font-size: 28px;">AdRoll ABM</span>
+                            <br />
+                        <span style="font-size: 11px;">formerly RollWorks</span> <br />
+                        The ABM platform specifically built for B2B revenue and marketing teams. Generate pipeline, speed up sales cycles, and close more deals. AdRoll ABM engages the right accounts at the right moments with multichannel ads, go-to-market orchestration, and revenue impact reporting. <br /><br />
+                        <a href="#">Learn More</a>
+                </p>
+            </div>
+
+        </div>
+
+        <div class="paragraphtriple">
+                <p class="ptripleone"> Why AdRoll?</p>
+                <p class="ptripletwo">Simplify and consolidate your multichannel ad strategy into one dashboard and turn your existing team, budget, and data into a consistent conversion engine.
+                </p>
+
+                <br /><br /><br />
+            <div class="ptriplejnr">
+                <div>
+                <p class="ptriplejnr1">Built for connectivity</p> <br /><br />
+                <p  class="ptriplejnr2">Strengthen your campaigns and make use of all your data by connecting to the systems and platforms you already use. <br /><br />
+                    <a href="#">Learn More</a>
+                </p>
+                </div>
+                <div>
+                    <p class="ptriplejnr1">Powered by 17+ years of machine learning</p> <br />
+                    <p class="ptriplejnr2">Offload the manual parts of digital advertising to our proprietary AI engines for precise performance every time.  <br /><br />
+                        <a href="#">Learn More</a>
+                    </p>
+                </div>
+                <div>
+                    <p class="ptriplejnr1">Multichannel consolidation</p>
+                    <br /><br />
+                    <p class="ptriplejnr2">Rather than logging into multiple ad managers, log in to one unified dashboard and see which channels perform best.  <br /><br />
+                        <a href="#">Learn More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <br /><br /><br />
+        <div class="fimgs">
+            <img src="adrollimgs/f/one.svg" alt="">
+            <img src="adrollimgs/f/two.svg" alt="">
+            <img src="adrollimgs/f/three.svg" alt="">
+            <img src="adrollimgs/f/four.svg" alt="">
+            <img src="adrollimgs/f/five.svg" alt="">
+        </div>
+
+         <br /><br /><br />
+        <div class="quintpLPW">
+            <div class="pWimg">
+                <p>Results</p>
+                <p>Our customers <br /> meet crush their goals</p>
+            </div>
+
+            <div class="quint">
+                <img src="adrollimgs/quint/quint1.png" class="quint1">
+                <img src="adrollimgs/quint/quint2.png" class="quint2">
+                <img src="adrollimgs/quint/quint3.png" class="quint3">
+            </div>
+
+        </div>
+
+    </section>
+
+        <div class="wxup">
+             <p style="font-size: 25px;">Insights</p>
+             <p style="font-size: 35px;">Keep rolling with the latest in digital advertising</p>
+            
+            <div class="insightspan">
+                <span>
+                    <p>Report</p> <br />
+                    <p>State of  Digital Advertising Report</p> <br />
+                    <p>See the data</p> 
+                </span>
+
+                <span>
+                    <p>Guide</p> <br />
+                    <p>The Contextual Ad Targeting Guide</p><br />
+                    <p>Get the Guide</p>
+                </span>
+
+                <span>
+                    <p>Webinars</p> <br />
+                    <p>Ctv that performs unlocking smarter targeting with adroll experian</p> <br />
+                    <p>Watch the Webinar</p> 
+                </span>
+
+                <span>
+                    <p>Blog</p> <br />
+                    <p>Ai for ad optimization the future is agentic but the present is powerful</p> <br />
+                    <p>Read the Blog</p> 
+                </span>
+            </div>
+
+            <p class="vaR">View all Resources</p>
+
+        </div>
+
+
+
+<!--         Footer note -->
+         <div class="footer">
+
+            <img src="adrollimgs/logo.png" alt="">
+            <span>
+                <img src="adrollimgs/sm/fb.png" alt="">
+                <img src="adrollimgs/sm/lin.png" alt="">
+                <img src="adrollimgs/sm/insta.png" alt="">
+                <img src="adrollimgs/sm/yt.png" alt="">
+            </span>
+
+            <div class="footer1">
+                <div>
+                    <p style="font-weight: 500; font-size: 25px;">Why AdRoll</p> <br />
+                    <p>Connected Ecosystem</p>
+                    <p>Artificial Intelligence</p>
+                    <p>Privacy & Consent</p> <br />
+
+                    <p style="font-weight: 500; font-size: 25px;">Company</p> <br />
+                    <p>News</p>
+                    <p>Careers</p>
+                    <p>Partnerships</p>
+                    <p>Agency Partnerships</p>
+                    <p>NextRoll Engineering</p>
+                </div>
+
+                <div>
+                    <p style="font-weight: 500; font-size: 25px;">Products</p> <br />
+                    <p>AdRoll Overview</p>
+                    <p>AdRoll ABM</p> <br />
+
+                  
+                    <p style="font-weight: 500; font-size: 25px;">Solutions</p> <br />
+                    <p>Advertising</p>
+                    <p>ABM</p>
+                    <p>Social Media</p>
+                    <p>Ecommerce</p>
+                    <p>Cross-Channel</p> <br />
+                    
+                    <p style="font-weight: 500; font-size: 25px;">Channels</p>     <br />
+                    <p>Connected TV</p>
+                    <p>Display</p>
+                    <p>Mobile</p>
+                    <p>Native</p>
+                    <p>Social</p>
+                    <p>Video</p>
+                    <p>Digital Out-of-Home</p>
+                </div>
+
+                <div>
+                    <p style="font-weight: 500; font-size: 25px;">Industries</p> <br />
+                    <p> Retail <br />
+                    B2B <br />
+                    Hospitality <br />
+                    Finance <br />
+                    D2C <br />
+                    Nonprofit <br />
+                    Agencies</p> <br />
+                </div>
+
+                <div>
+                    <p style="font-weight: 500; font-size: 25px;">Pricing</p> <br />
+                    <p>Pricing & Packaging <br />
+                    Managed Services<br />
+                    Self-Service</p>
+                </div>
+
+                <div>
+                    <p style="font-weight: 500; font-size: 25px;">Resources</p> <br />
+                    <p>Resource Library <br />
+                    Digital Advertising Knowledge Center  <br />
+                    State of Digital Advertising Report <br />
+                    Blog <br />
+                    Events <br />
+                    News <br />
+                    Digital Advertising Newsletter</p> <br />
+
+                    <p style="font-weight: 500; font-size: 25px;">Free Tools</p> <br />
+                    <p>ROAS Calculator <br />
+                    UTM Link Builder <br />
+                    Discount Profit Margin Calculator</p> <br />
+
+                    <p style="font-weight: 500; font-size: 25px;">Customer Support</p> <br />
+                    <p>Getting Started <br />
+                    Help Center</p>
+                </div>
+
+            </div>
+
+         </div>
+            
+</body>
+</html>
