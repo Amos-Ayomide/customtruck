@@ -1,0 +1,198 @@
+
+
+.onanmission{
+    width: 100%;
+}
+
+.firstpagep{
+    text-align: center;
+    font-size: 35px;
+    margin-top: 50px;
+    opacity: 0.8;
+    margin-bottom: 70px;
+}
+
+div.aMMdiv{
+    background: #32eed2;
+    width: 60%;
+    height: 700px;
+   
+    p.aMM{
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 25%; 
+        span{
+            font-size: 35px;
+        }  
+    }
+
+    button{
+        margin: 25px 0 0 40%;
+        border: 1px solid whitesmoke;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+    }
+}
+div.aMMdiv:hover{
+    background: #1d554d;
+}
+
+div.two2div, div.five5div{
+    display: flex;
+        img.aMM{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        filter: blur(3px);
+    }
+}
+
+div.three3div{
+    display: flex;
+        img.aMM{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        filter: blur(3px);
+    }
+}
+
+div.aMMdiv2{
+    background: midnightblue;
+    width: 60%;
+    height:700px;
+   
+    p.aMM{
+        color: whitesmoke;
+        text-align: center;
+        padding-top: 25%; 
+        span{
+            font-size: 35px;
+        }  
+    }
+
+    button{
+        margin: 25px 0 0 40%;
+        border: 1px solid whitesmoke;
+        padding: 20px;
+        font-size: 20px;
+        color: white;
+    }
+}
+
+div.fourthdiv, div.sixthdiv{
+    margin-bottom: 90px;
+    span{
+        font-size: 40px;
+    }
+    p.aMM46{
+        justify-self: center;
+        text-align: center;
+        width: 90%;
+        font-size: 20px;
+        padding: 90px 0 0 0;
+    }
+    button{
+        margin: 25px 0 0 45%;
+        border: 1px solid black;
+        padding: 10px;
+        font-size: 20px;
+    }
+}
+
+div.six6div{
+    display: flex;
+    margin: 70px 0 0 0;
+        img.aMM{
+        display: flex;
+        width: 100%;
+        height: 700px;
+        filter: blur(3px);
+    }
+
+    div.aMMdivfor6{
+        background: tomato;
+        width: 60%;
+        color: white;
+    }
+    button{
+        border: 1px solid white;
+    }
+}
+
+
+div.acemblog{
+    background: grey;
+    p.acemblogp{
+        text-align: center;
+        font-size: 20px;
+        padding: 50px 0 0 ;
+        color: midnightblue;
+        font-weight: 600;
+    }
+    p.acemblogp2{
+        text-align: center;
+        font-size: 18px;
+    }
+}
+
+div.firpacemblog, div.secpacemblog{
+    display: flex;
+    margin-top: 40px;
+    padding-bottom: 70px;
+    div.in{
+        width: 20%;
+        height: 300px;
+        background: rgba(224, 223, 223, 0.832);
+        margin: 0 0 0 130px;
+        align-content: end;
+    }
+}
+
+.lastone{
+    background: blue;
+    color: whitesmoke;
+    display: flex;
+    gap: 30px;
+    padding: 100px 0;
+
+    .lastoneone{
+        margin: 0 0 0 100px;
+        img{
+            width: 100px;
+        }
+    }
+
+    .sixparaimg{
+        display: flex;
+        gap: 20px;
+    }
+    
+
+}
+
+a:hover{
+    color: red;
+    border-bottom: 1px solid red;
+}
+
+@media(max-width: 600px){
+    div.two2div, div.three3div, div.five5div{
+        flex-wrap: wrap;  
+    }
+
+    div.aMMdiv2, div.aMMdiv{
+        width: 100%;
+    }
+
+    .lastone{
+        .lastoneone{
+            margin: 0 0 0 0;
+        }
+
+        .sixparaimg{
+            display: none;
+        }
+    }
+}

@@ -1270,6 +1270,9 @@
   .h-6 {
     height: calc(var(--spacing) * 6);
   }
+  .h-7 {
+    height: calc(var(--spacing) * 7);
+  }
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
@@ -1527,6 +1530,11 @@
     --tw-space-x-reverse: 0;
     margin-inline-start: calc(calc(var(--spacing) * 2) * var(--tw-space-x-reverse));
     margin-inline-end: calc(calc(var(--spacing) * 2) * calc(1 - var(--tw-space-x-reverse)));
+  }
+  :where(.space-x-3 > :not(:last-child)) {
+    --tw-space-x-reverse: 0;
+    margin-inline-start: calc(calc(var(--spacing) * 3) * var(--tw-space-x-reverse));
+    margin-inline-end: calc(calc(var(--spacing) * 3) * calc(1 - var(--tw-space-x-reverse)));
   }
   .overflow-hidden {
     overflow: hidden;
@@ -2192,11 +2200,20 @@
     .md\:inset-0 {
       inset: 0px;
     }
+    .md\:order-1 {
+      order: 1;
+    }
+    .md\:order-2 {
+      order: 2;
+    }
     .md\:mt-0 {
       margin-top: 0px;
     }
     .md\:block {
       display: block;
+    }
+    .md\:flex {
+      display: flex;
     }
     .md\:hidden {
       display: none;
@@ -2212,6 +2229,11 @@
     }
     .md\:flex-row {
       flex-direction: row;
+    }
+    :where(.md\:space-x-0 > :not(:last-child)) {
+      --tw-space-x-reverse: 0;
+      margin-inline-start: 0;
+      margin-inline-end: 0;
     }
     :where(.md\:space-x-8 > :not(:last-child)) {
       --tw-space-x-reverse: 0;
